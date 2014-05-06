@@ -39,7 +39,7 @@ user_management::user_management(QWidget *parent) :
         ui->userView->setColumnWidth(j,443);
     }
     load_users();
-	 QObject::connect(ui->readCard, &QPushButton::clicked, this, &user_management::on_read_card);
+     QObject::connect(ui->readCard, &QPushButton::clicked, this, &user_management::on_read_card);
 }
 
 void user_management::load_users()
